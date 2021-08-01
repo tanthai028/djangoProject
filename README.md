@@ -8,5 +8,8 @@ python manage.py migrate
 python manage.py createsuperuser
 python manage.py runserver
 
+# Overview
+![](overview.png)
+
 Copy and paste http:localhost:8000/admin in your url and sign in with your own admin credential.
 
