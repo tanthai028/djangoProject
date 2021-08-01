@@ -1,0 +1,29 @@
+{% extends 'events/base.html' %}
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    {% block content %}
+     <div id="content-main">
+     <link rel="stylesheet" href="{% static 'events/css/styles.css' %}">
+        <div class="object-tools">
+            <a href={{ next_month }}>
+                Next month
+            </a>
+            <br/>
+            <a href={{ previous_month }}>
+                 Previous month
+            </a>
+        </div>
+
+        <center>
+            {{ calendar }}
+        </center>
+     </div>
+
+    {% endblock %}
+</head>
+</html>
+
+

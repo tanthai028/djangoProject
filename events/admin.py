@@ -14,7 +14,7 @@ from django.utils.safestring import mark_safe
 
 class EventAdmin(admin.ModelAdmin):
     list_display = ['day', 'start_time', 'end_time', 'notes']
-    change_list_template = 'admin/events/change_list.html'
+    change_list_template = 'events/change_list.html'
 
     def changelist_view(self, request, extra_context=None):
         after_day = request.GET.get('day__gte', None)
